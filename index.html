@@ -25,9 +25,13 @@
         <li><a href="#education" class="hover:text-blue-600 transition">Education</a></li>
         <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
         <li>
-          <button class="bg-[#432DD7] text-white px-4 py-2 rounded-[10px] hover:bg-blue-700 transition">
-            Hire Me
-          </button>
+          <a href="#contact"
+   class="inline-block bg-[#432DD7] hover:bg-blue-700
+          text-white px-4 py-2
+          rounded-[10px] transition duration-300">
+  Hire Me
+</a>
+
         </li>
       </ul>
 
@@ -70,10 +74,12 @@
           class="flex items-center justify-center gap-2 bg-[#432DD7] text-white px-6 py-3 rounded-[10px] hover:bg-blue-700 transition w-full sm:w-auto">
           <img src="/Assets/Icon.svg" class="w-5 h-5" alt=""> Download CV
         </button>
-        <button
-          class="border-2 border-[#432DD7] rounded-[10px] text-[#432DD7] px-6 py-3 hover:bg-blue-700 hover:text-white transition w-full sm:w-auto">
-          Contact Me
-        </button>
+       <a href="#contact">
+  <button
+    class="border-2 border-[#432DD7] rounded-[10px] text-[#432DD7] px-6 py-3 hover:bg-blue-700 hover:text-white transition w-full sm:w-auto">
+    Contact Me
+  </button>
+</a>
       </div>
     </div>
   </section>
@@ -114,46 +120,117 @@
   </section>
 
   <section id="education" class="bg-white py-20 flex flex-col items-center gap-6">
-    <div class="text-center flex flex-col gap-2">
-      <h2 class="text-[48px] font-medium">Education</h2>
-      <span class="text-[18px] text-[#4A5565]">My academic background and professional certifications</span>
+
+  <!-- Heading -->
+  <div class="text-center flex flex-col gap-2 px-4">
+    <h2 class="text-[32px] sm:text-[40px] lg:text-[48px] font-medium">
+      Education
+    </h2>
+    <span class="text-[16px] sm:text-[18px] text-[#4A5565]">
+      My academic background and professional certifications
+    </span>
+  </div>
+
+  <!-- ================= DESKTOP TABLE ================= -->
+  <div class="hidden lg:block max-w-[1000px] w-full mt-10">
+    <table class="w-full border border-gray-200 rounded-[16px] overflow-hidden shadow-md">
+      <thead class="bg-[#432DD7] text-white h-14 text-left">
+        <tr>
+          <th class="px-6 py-3">Degree</th>
+          <th class="px-6 py-3">Institute</th>
+          <th class="px-6 py-3">Year</th>
+          <th class="px-6 py-3">Grade</th>
+        </tr>
+      </thead>
+      <tbody class="text-[#364153]">
+        <tr class="border-t hover:bg-gray-50 transition">
+          <td class="px-6 py-4">BS Computer Science</td>
+          <td class="px-6 py-4">University of XYZ</td>
+          <td class="px-6 py-4 text-[#009689]">2019 - 2023</td>
+          <td class="px-6 py-4">
+            <span class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[14px] inline-block">
+              3.4 CGPA
+            </span>
+          </td>
+        </tr>
+
+        <tr class="border-t hover:bg-gray-50 transition">
+          <td class="px-6 py-4">Intermediate (ICS)</td>
+          <td class="px-6 py-4">ABC College</td>
+          <td class="px-6 py-4 text-[#009689]">2017 - 2019</td>
+          <td class="px-6 py-4">
+            <span class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[14px] inline-block">
+              85%
+            </span>
+          </td>
+        </tr>
+
+        <tr class="border-t hover:bg-gray-50 transition">
+          <td class="px-6 py-4">Matric</td>
+          <td class="px-6 py-4">XYZ School</td>
+          <td class="px-6 py-4 text-[#009689]">2015 - 2017</td>
+          <td class="px-6 py-4">
+            <span class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[14px] inline-block">
+              90%
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ================= MOBILE CARDS ================= -->
+  <div class="lg:hidden w-full px-4 mt-10 flex flex-col gap-6">
+
+    <!-- Card 1 -->
+    <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 flex flex-col gap-3">
+      <h3 class="text-[18px] font-semibold text-gray-800">
+        BS Computer Science
+      </h3>
+      <p class="text-gray-600 text-[14px]">University of XYZ</p>
+
+      <div class="flex items-center justify-between mt-2">
+        <span class="text-[#009689] text-[14px]">2019 - 2023</span>
+        <span class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[13px]">
+          3.4 CGPA
+        </span>
+      </div>
     </div>
-    <div class="max-w-[1000px] w-full overflow-x-auto mt-10">
-      <table class="w-full border border-gray-200 rounded-[16px] overflow-hidden shadow-md">
-        <thead class="bg-[#432DD7] text-white h-14 text-left">
-          <tr>
-            <th class="px-6 py-3">Degree</th>
-            <th class="px-6 py-3">Institute</th>
-            <th class="px-6 py-3">Year</th>
-            <th class="px-6 py-3">Grade</th>
-          </tr>
-        </thead>
-        <tbody class="text-[#364153]">
-          <tr class="border-t hover:bg-gray-50 transition">
-            <td class="px-6 py-4">BS Computer Science</td>
-            <td class="px-6 py-4">University of XYZ</td>
-            <td class="px-6 py-4 text-[#009689]">2019 - 2023</td>
-            <td class="px-6 py-4"><span
-                class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[14px] inline-block">3.4 CGPA</span></td>
-          </tr>
-          <tr class="border-t hover:bg-gray-50 transition">
-            <td class="px-6 py-4">Intermediate (ICS)</td>
-            <td class="px-6 py-4">ABC College</td>
-            <td class="px-6 py-4 text-[#009689]">2017 - 2019</td>
-            <td class="px-6 py-4"><span
-                class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[14px] inline-block">85%</span></td>
-          </tr>
-          <tr class="border-t hover:bg-gray-50 transition">
-            <td class="px-6 py-4">Matric</td>
-            <td class="px-6 py-4">XYZ School</td>
-            <td class="px-6 py-4 text-[#009689]">2015 - 2017</td>
-            <td class="px-6 py-4"><span
-                class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[14px] inline-block">90%</span></td>
-          </tr>
-        </tbody>
-      </table>
+
+    <!-- Card 2 -->
+    <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 flex flex-col gap-3">
+      <h3 class="text-[18px] font-semibold text-gray-800">
+        Intermediate (ICS)
+      </h3>
+      <p class="text-gray-600 text-[14px]">ABC College</p>
+
+      <div class="flex items-center justify-between mt-2">
+        <span class="text-[#009689] text-[14px]">2017 - 2019</span>
+        <span class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[13px]">
+          85%
+        </span>
+      </div>
     </div>
-  </section>
+
+    <!-- Card 3 -->
+    <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 flex flex-col gap-3">
+      <h3 class="text-[18px] font-semibold text-gray-800">
+        Matric
+      </h3>
+      <p class="text-gray-600 text-[14px]">XYZ School</p>
+
+      <div class="flex items-center justify-between mt-2">
+        <span class="text-[#009689] text-[14px]">2015 - 2017</span>
+        <span class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[13px]">
+          90%
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
 
   <section id="contact" class="w-full bg-[#F9FAFB] py-20 flex flex-col items-center gap-6">
     <div class="text-center flex flex-col gap-2">
