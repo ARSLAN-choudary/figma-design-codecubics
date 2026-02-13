@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Portfolio Website</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-black">
+  <!-- Header Section -->
+  <header class="bg-black text-white shadow-sm w-full border-b border-[#F0B100] fixed top-0 left-0 z-50">
+    <nav class="max-w-[1216px] mx-auto flex justify-between items-center py-4 px-4 lg:px-0">
+      <!-- Logo -->
+      <img class="w-[160px] sm:w-[180px] md:w-[201.47px] h-auto" src="/Assets2/logo.svg" alt="Logo" />
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex items-center gap-4 lg:gap-6 text-[14px] lg:text-[16px]">
+        <li>
+          <a href="#home" class="hover:text-[#F0B100] transition">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="hover:text-[#F0B100] transition">About</a>
+        </li>
+        <li>
+          <a href="#skills" class="hover:text-[#F0B100] transition">Skills</a>
+        </li>
+        <li>
+          <a href="#education" class="hover:text-[#F0B100] transition">Education</a>
+        </li>
+        <li>
+          <a href="#testimonials" class="hover:text-[#F0B100] transition">Testimonials</a>
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-[#F0B100] transition">Contact</a>
+        </li>
+        <li>
+          <button
+            class="bg-[#F0B100] hover:bg-[#FE9A00] cursor-pointer text-white px-5 lg:px-6 py-2 lg:py-2.5 rounded-[4px] transition duration-300 font-medium text-[14px] lg:text-[16px]">
+            Hire Me
+          </button>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <label for="menu-toggle" class="cursor-pointer">
+          <svg class="w-7 h-7 text-[#F0B100]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Dropdown -->
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    <div
+      class="peer-checked:flex hidden flex-col items-center gap-4 bg-[#111111] shadow-lg absolute w-full top-[72px] left-0 py-6 md:hidden border-t border-[#F0B100]/30">
+      <a href="#home" class="text-white hover:text-[#F0B100] transition py-2">Home</a>
+      <a href="#about" class="text-white hover:text-[#F0B100] transition py-2">About</a>
+      <a href="#skills" class="text-white hover:text-[#F0B100] transition py-2">Skills</a>
+      <a href="#education" class="text-white hover:text-[#F0B100] transition py-2">Education</a>
+      <a href="#testimonials" class="text-white hover:text-[#F0B100] transition py-2">Testimonials</a>
+      <a href="#contact" class="text-white hover:text-[#F0B100] transition py-2">Contact</a>
+      <button
+        class="bg-[#F0B100] hover:bg-[#FE9A00] text-white px-8 py-2.5 rounded-[4px] transition duration-300 font-medium mt-2 w-[80%]">
+        Hire Me
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home"
+    class="pt-24 lg:pt-32 px-4 lg:px-0 max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-6 mt-8 lg:mt-0">
+    <!-- LEFT SIDE -->
+    <div class="w-full lg:w-1/2 text-center lg:text-left md:p-6">
+      <div
+        class="max-w-[200px] sm:max-w-[220px] h-[36px] flex items-center gap-2 border-l-4 border-[#FE9A00] px-4 mb-4 lg:mb-6 mx-auto lg:mx-0">
+        <img class="w-4 h-4 sm:w-5 sm:h-5" src="/Assets2/crown.svg" alt="crown" />
+        <span class="text-xs sm:text-sm text-[#F0B100] whitespace-nowrap">Premium Quality</span>
+      </div>
+
+      <div class="flex flex-col">
+        <div
+          class="flex flex-col sm:flex-row lg:flex-col items-center lg:items-start justify-center gap-2 sm:gap-4 lg:gap-0">
+          <p class="text-4xl sm:text-5xl md:text-6xl lg:text-[96px] font-bold leading-none text-white">
+            JOHN
+          </p>
+          <p class="text-4xl sm:text-5xl md:text-6xl lg:text-[96px] font-bold leading-none text-[#FE9A00]">
+            DOE
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full flex flex-col items-center lg:items-start justify-start gap-3 lg:gap-4 mt-4 lg:mt-0">
+        <p class="text-[#99A1AF] text-[18px] sm:text-[20px] lg:text-[24px] font-medium text-center lg:text-left">
+          FULL STACK DEVELOPER
+        </p>
+        <span
+          class="text-[14px] sm:text-[16px] lg:text-[18px] text-[#99A1AF] max-w-[600px] lg:max-w-none text-center lg:text-left">
+          Delivering excellence in every line of code. Transforming complex
+          challenges into elegant solutions with precision, expertise, and a
+          commitment to quality that sets industry standards.
+        </span>
+
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mt-6 lg:mt-8 w-full sm:w-auto">
+          <!-- View Portfolio -->
+          <button
+            class="w-full sm:w-auto h-[50px] sm:h-[55px] lg:h-[60px] bg-[#F0B100] text-black flex items-center justify-center gap-2 px-5 lg:px-6 rounded-[4px] text-[14px] sm:text-[15px] lg:text-[16px] font-bold uppercase hover:bg-[#FE9A00] transition duration-300 cursor-pointer">
+            View Portfolio
+            <img src="/Assets2/arrow.svg" class="w-3 h-3 sm:w-4 sm:h-4" alt="" />
+          </button>
+
+          <!-- Contact -->
+          <button
+            class="w-full sm:w-auto h-[50px] sm:h-[55px] lg:h-[60px] border border-[#F0B100] text-[#F0B100] flex items-center justify-center gap-2 px-5 lg:px-6 rounded-[4px] text-[14px] sm:text-[15px] lg:text-[16px] font-bold uppercase hover:bg-[#F0B100] hover:text-black transition duration-300 cursor-pointer">
+            <img src="/Assets2/msg.svg" class="w-3 h-3 sm:w-4 sm:h-4" alt="" />
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="w-full lg:w-1/2 flex justify-center mt-8 lg:mt-0">
+      <div class="relative">
+        <!-- Main Image -->
+        <div
+          class="w-[260px] sm:w-[320px] md:w-[400px] lg:w-[480px] xl:w-[520px] h-[320px] sm:h-[400px] md:h-[500px] lg:h-[580px] xl:h-[632px] border-2 border-[#FE9A00] rounded-[10px] p-2 overflow-hidden">
+          <img class="w-full h-full object-cover object-center rounded-[6px]"
+            src="/Assets2/IMG-20221225-WA0020.jpg" alt="Profile" />
+        </div>
+
+        <!-- Elite Badge -->
+        <div
+          class="absolute -top-4 lg:-top-6 left-[-5px] lg:left-[-10px] bg-[#FE9A00] text-black text-[12px] lg:text-sm font-medium flex items-center gap-1 lg:gap-2 px-3 lg:px-4 py-1.5 lg:py-2 rounded-[6px] shadow-md">
+          <img src="/Assets2/diamond.svg" class="w-4 h-4 lg:w-5 lg:h-5" alt="" />
+          ELITE
+        </div>
+
+        <!-- Verified Badge -->
+        <div
+          class="absolute -bottom-4 lg:-bottom-6 right-[-10px] lg:right-[-18px] bg-black text-[#FE9A00] border border-[#FE9A00] text-[12px] lg:text-sm font-medium flex items-center gap-1 lg:gap-2 px-3 lg:px-4 py-1.5 lg:py-2 rounded-[6px] shadow-md">
+          <img src="/Assets2/tick.svg" class="w-4 h-4 lg:w-5 lg:h-5" alt="" />
+          Verified
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="w-full px-4 lg:px-0 py-12 lg:py-[80px] max-w-[1280px] mx-auto mt-8 lg:mt-[80px]">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 place-items-center">
+      <!-- Stat 1 -->
+      <div
+        class="max-w-[286px] w-full h-[180px] sm:h-[190px] lg:h-[200px] bg-gradient-to-r from-[#101828] to-[#000000] flex flex-col items-center justify-center gap-3 lg:gap-4 rounded-[10px] border border-[#FE9A00] p-4">
+        <img class="w-[48px] sm:w-[56px] lg:w-[64px] h-[48px] sm:h-[56px] lg:h-[64px]" src="/Assets2/box.svg"
+          alt="Projects" />
+        <p class="text-[28px] sm:text-[32px] lg:text-[36px] font-bold text-[#FE9A00]">
+          50+
+        </p>
+        <span class="text-[12px] lg:text-[14px] text-[#99A1AF] text-center">Projects Completed</span>
+      </div>
+      <!-- Stat 2 -->
+      <div
+        class="max-w-[286px] w-full h-[180px] sm:h-[190px] lg:h-[200px] bg-gradient-to-r from-[#101828] to-[#000000] flex flex-col items-center justify-center gap-3 lg:gap-4 rounded-[10px] border border-[#FE9A00] p-4">
+        <img class="w-[48px] sm:w-[56px] lg:w-[64px] h-[48px] sm:h-[56px] lg:h-[64px]" src="/Assets2/people.svg"
+          alt="Clients" />
+        <p class="text-[28px] sm:text-[32px] lg:text-[36px] font-bold text-[#FE9A00]">
+          30+
+        </p>
+        <span class="text-[12px] lg:text-[14px] text-[#99A1AF] text-center">Happy Clients</span>
+      </div>
+      <!-- Stat 3 -->
+      <div
+        class="max-w-[286px] w-full h-[180px] sm:h-[190px] lg:h-[200px] bg-gradient-to-r from-[#101828] to-[#000000] flex flex-col items-center justify-center gap-3 lg:gap-4 rounded-[10px] border border-[#FE9A00] p-4">
+        <img class="w-[48px] sm:w-[56px] lg:w-[64px] h-[48px] sm:h-[56px] lg:h-[64px]" src="/Assets2/badge.svg"
+          alt="Awards" />
+        <p class="text-[28px] sm:text-[32px] lg:text-[36px] font-bold text-[#FE9A00]">
+          15+
+        </p>
+        <span class="text-[12px] lg:text-[14px] text-[#99A1AF] text-center">AWARDS WON</span>
+      </div>
+      <!-- Stat 4 -->
+      <div
+        class="max-w-[286px] w-full h-[180px] sm:h-[190px] lg:h-[200px] bg-gradient-to-r from-[#101828] to-[#000000] flex flex-col items-center justify-center gap-3 lg:gap-4 rounded-[10px] border border-[#FE9A00] p-4">
+        <img class="w-[48px] sm:w-[56px] lg:w-[64px] h-[48px] sm:h-[56px] lg:h-[64px]" src="/Assets2/grapharrow.svg"
+          alt="Experience" />
+        <p class="text-[28px] sm:text-[32px] lg:text-[36px] font-bold text-[#FE9A00]">
+          5+
+        </p>
+        <span class="text-[12px] lg:text-[14px] text-[#99A1AF] text-center">YEARS EXPERIENCE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="mt-8 lg:mt-[80px] px-4 lg:px-0 max-w-[1280px] mx-auto">
+    <div class="w-full flex flex-col items-center justify-center gap-8 lg:gap-[64px]">
+      <!-- Section Header -->
+      <div class="flex flex-col items-center justify-center text-center">
+        <div
+          class="max-w-[200px] sm:max-w-[220px] h-[36px] flex items-center gap-2 border-l-4 border-[#FE9A00] px-4 mb-4 lg:mb-6 mx-auto">
+          <img class="w-4 h-4 sm:w-5 sm:h-5" src="/Assets2/guard.svg" alt="guard" />
+          <span class="text-xs sm:text-sm text-[#F0B100] whitespace-nowrap">About</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+          <span class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-white">
+            EXPERTISE &
+          </span>
+
+          <span class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-[#FE9A00] lg:-mt-5">
+            Excellence
+          </span>
+        </div>
+      </div>
+
+      <!-- Content Grid -->
+      <div class="flex flex-col lg:flex-row items-stretch justify-center gap-4 lg:gap-6 w-full">
+        <!-- Left Side - Mission -->
+        <div
+          class="p-5 sm:p-6 lg:p-[34px] flex flex-col items-center lg:items-start justify-start gap-4 lg:gap-[24px] border border-[#FE9A00] rounded-[10px] w-full lg:max-w-[592px] h-[364px]">
+          <div class="flex items-center justify-center lg:justify-start gap-2">
+            <img class="w-6 h-6 sm:w-7 sm:h-7 lg:w-[32px] lg:h-[32px]" src="/Assets2/circles.svg" alt="Mission" />
+            <p class="text-[18px] sm:text-[20px] lg:text-[24px] font-bold text-white">
+              My Mission
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center lg:items-start gap-3 lg:gap-[16px] text-[14px] sm:text-[15px] lg:text-[16px] text-[#99A1AF] text-center lg:text-left">
+            <span>With over 5 years of elite experience, I specialize in crafting
+              premium digital solutions that combine technical excellence with
+              exceptional user experience.</span>
+            <span>Every project I undertake is approached with meticulous
+              attention to detail, ensuring world-class quality and
+              performance that exceeds expectations.</span>
+            <span>My commitment to excellence drives me to continuously innovate
+              and deliver solutions that set new standards in the
+              industry.</span>
+          </div>
+        </div>
+
+        <!-- Right Side - Expertise -->
+        <div
+          class="p-5 sm:p-6 lg:p-[34px] flex flex-col items-start justify-center gap-3 lg:gap-[16px] border border-[#FE9A00] rounded-[10px] w-full lg:max-w-[592px]">
+          <!-- Web Development -->
+          <div
+            class="flex items-center gap-3 lg:gap-4 border-l-2 border-[#FE9A00] rounded-tl-[10px] rounded-bl-[10px] p-4 sm:p-5 lg:p-[24px] w-full">
+            <img class="w-8 h-8 sm:w-10 sm:h-10 lg:w-[48px] lg:h-[48px]" src="/Assets2/world.svg"
+              alt="Web Development" />
+            <div class="flex flex-col items-start">
+              <span class="text-[14px] sm:text-[15px] lg:text-[16px] text-white font-bold">Web Development</span>
+              <span class="text-[12px] sm:text-[13px] lg:text-[14px] text-[#99A1AF]">Enterprise-grade
+                applications</span>
+            </div>
+          </div>
+          <!-- Mobile Solutions -->
+          <div
+            class="flex items-center gap-3 lg:gap-4 border-l-2 border-[#FE9A00] rounded-tl-[10px] rounded-bl-[10px] p-4 sm:p-5 lg:p-[24px] w-full">
+            <img class="w-8 h-8 sm:w-10 sm:h-10 lg:w-[48px] lg:h-[48px]" src="/Assets2/mobiledev.svg"
+              alt="Mobile Solutions" />
+            <div class="flex flex-col items-start">
+              <span class="text-[14px] sm:text-[15px] lg:text-[16px] text-white font-bold">Mobile Solutions</span>
+              <span class="text-[12px] sm:text-[13px] lg:text-[14px] text-[#99A1AF]">Native & hybrid platforms</span>
+            </div>
+          </div>
+          <!-- Cloud Architecture -->
+          <div
+            class="flex items-center gap-3 lg:gap-4 border-l-2 border-[#FE9A00] rounded-tl-[10px] rounded-bl-[10px] p-4 sm:p-5 lg:p-[24px] w-full">
+            <img class="w-8 h-8 sm:w-10 sm:h-10 lg:w-[48px] lg:h-[48px]" src="/Assets2/cloud.svg"
+              alt="Cloud Architecture" />
+            <div class="flex flex-col items-start">
+              <span class="text-[14px] sm:text-[15px] lg:text-[16px] text-white font-bold">Cloud Architecture</span>
+              <span class="text-[12px] sm:text-[13px] lg:text-[14px] text-[#99A1AF]">Scalable infrastructure</span>
+            </div>
+          </div>
+          <!-- API Systems -->
+          <div
+            class="flex items-center gap-3 lg:gap-4 border-l-2 border-[#FE9A00] rounded-tl-[10px] rounded-bl-[10px] p-4 sm:p-5 lg:p-[24px] w-full">
+            <img class="w-8 h-8 sm:w-10 sm:h-10 lg:w-[48px] lg:h-[48px]" src="/Assets2/api.svg" alt="API Systems" />
+            <div class="flex flex-col items-start">
+              <span class="text-[14px] sm:text-[15px] lg:text-[16px] text-white font-bold">API Systems</span>
+              <span class="text-[12px] sm:text-[13px] lg:text-[14px] text-[#99A1AF]">High-performance backends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="mt-12 lg:mt-[80px] px-4 lg:px-0 max-w-[1280px] mx-auto">
+    <div class="w-full flex flex-col items-center justify-center gap-8 lg:gap-[64px]">
+      <div class="flex flex-col items-center justify-center text-center">
+        <div
+          class="max-w-[200px] sm:max-w-[220px] h-[36px] flex items-center gap-2 border-l-4 border-[#FE9A00] px-4 mb-4 lg:mb-6 mx-auto">
+          <img class="w-4 h-4 sm:w-5 sm:h-5" src="/Assets2/crown.svg" alt="skills" />
+          <span class="text-xs sm:text-sm text-[#F0B100] whitespace-nowrap">Skills</span>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+          <span class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-white">
+            TECHNICAL
+          </span>
+          <span class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-[#FE9A00] relative lg:-top-4">
+            MASTERY
+          </span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-[64px]">
+          <!-- progress-card 1 -->
+          <div
+            class="max-w-[389.33px] w-full h-[124px] sm:w-[320px] md:w-[340px] lg:w-[360px] bg-[#0B0E12] rounded-[20px] border border-[#2A2F35] p-[26px] shadow-xl">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-[#0E1A1F] rounded-[12px] flex items-center justify-center border border-[#2A4A5A]">
+                  <img class="w-[48px] h-[48px]" src="/Assets2/codeicon.svg" alt="" />
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="text-white font-bold text-[18px] leading-tight">React & Next.js</span>
+                  <span class="text-[#FE9A00] text-[12px]">FRONTEND</span>
+                </div>
+              </div>
+              <span class="text-white font-bold text-[24px] leading-none">95%</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="relative w-full h-[8px] bg-[#1F272E] rounded-full overflow-hidden">
+              <div
+                class="absolute top-0 left-0 h-full w-[95%] bg-gradient-to-r from-[#FE9A00] to-[#F0B100] rounded-full">
+                <div class="absolute top-0 right-0 w-[20px] h-full bg-white/30 blur-[2px]"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- progress-card 2 -->
+          <div
+            class="max-w-[389.33px] w-full h-[124px] sm:w-[320px] md:w-[340px] lg:w-[360px] bg-[#0B0E12] rounded-[20px] border border-[#2A2F35] p-[26px] shadow-xl">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-[#0E1A1F] rounded-[12px] flex items-center justify-center border border-[#2A4A5A]">
+                  <img class="w-[48px] h-[48px]" src="/Assets2/codeicon.svg" alt="" />
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="text-white font-bold text-[18px] leading-tight">React & Next.js</span>
+                  <span class="text-[#FE9A00] text-[12px]">FRONTEND</span>
+                </div>
+              </div>
+              <span class="text-white font-bold text-[24px] leading-none">95%</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="relative w-full h-[8px] bg-[#1F272E] rounded-full overflow-hidden">
+              <div
+                class="absolute top-0 left-0 h-full w-[95%] bg-gradient-to-r from-[#FE9A00] to-[#F0B100] rounded-full">
+                <div class="absolute top-0 right-0 w-[20px] h-full bg-white/30 blur-[2px]"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- progress-card 3 -->
+          <div
+            class="max-w-[389.33px] w-full h-[124px] sm:w-[320px] md:w-[340px] lg:w-[360px] bg-[#0B0E12] rounded-[20px] border border-[#2A2F35] p-[26px] shadow-xl">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-[#0E1A1F] rounded-[12px] flex items-center justify-center border border-[#2A4A5A]">
+                  <img class="w-[48px] h-[48px]" src="/Assets2/codeicon.svg" alt="" />
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="text-white font-bold text-[18px] leading-tight">React & Next.js</span>
+                  <span class="text-[#FE9A00] text-[12px]">FRONTEND</span>
+                </div>
+              </div>
+              <span class="text-white font-bold text-[24px] leading-none">95%</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="relative w-full h-[8px] bg-[#1F272E] rounded-full overflow-hidden">
+              <div
+                class="absolute top-0 left-0 h-full w-[95%] bg-gradient-to-r from-[#FE9A00] to-[#F0B100] rounded-full">
+                <div class="absolute top-0 right-0 w-[20px] h-full bg-white/30 blur-[2px]"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- progress-card 4 -->
+          <div
+            class="max-w-[389.33px] w-full h-[124px] sm:w-[320px] md:w-[340px] lg:w-[360px] bg-[#0B0E12] rounded-[20px] border border-[#2A2F35] p-[26px] shadow-xl">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-[#0E1A1F] rounded-[12px] flex items-center justify-center border border-[#2A4A5A]">
+                  <img class="w-[48px] h-[48px]" src="/Assets2/codeicon.svg" alt="" />
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="text-white font-bold text-[18px] leading-tight">React & Next.js</span>
+                  <span class="text-[#FE9A00] text-[12px]">FRONTEND</span>
+                </div>
+              </div>
+              <span class="text-white font-bold text-[24px] leading-none">95%</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="relative w-full h-[8px] bg-[#1F272E] rounded-full overflow-hidden">
+              <div
+                class="absolute top-0 left-0 h-full w-[95%] bg-gradient-to-r from-[#FE9A00] to-[#F0B100] rounded-full">
+                <div class="absolute top-0 right-0 w-[20px] h-full bg-white/30 blur-[2px]"></div>
+              </div>
+            </div>
+          </div>
+          <!-- progress-card 5 -->
+          <div
+            class="max-w-[389.33px] w-full h-[124px] sm:w-[320px] md:w-[340px] lg:w-[360px] bg-[#0B0E12] rounded-[20px] border border-[#2A2F35] p-[26px] shadow-xl">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-[#0E1A1F] rounded-[12px] flex items-center justify-center border border-[#2A4A5A]">
+                  <img class="w-[48px] h-[48px]" src="/Assets2/codeicon.svg" alt="" />
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="text-white font-bold text-[18px] leading-tight">React & Next.js</span>
+                  <span class="text-[#FE9A00] text-[12px]">FRONTEND</span>
+                </div>
+              </div>
+              <span class="text-white font-bold text-[24px] leading-none">95%</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="relative w-full h-[8px] bg-[#1F272E] rounded-full overflow-hidden">
+              <div
+                class="absolute top-0 left-0 h-full w-[95%] bg-gradient-to-r from-[#FE9A00] to-[#F0B100] rounded-full">
+                <div class="absolute top-0 right-0 w-[20px] h-full bg-white/30 blur-[2px]"></div>
+              </div>
+            </div>
+          </div>
+          <!-- progress-card 6 -->
+          <div
+            class="max-w-[389.33px] w-full h-[124px] sm:w-[320px] md:w-[340px] lg:w-[360px] bg-[#0B0E12] rounded-[20px] border border-[#2A2F35] p-[26px] shadow-xl">
+            <!-- Header Section -->
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-12 h-12 bg-[#0E1A1F] rounded-[12px] flex items-center justify-center border border-[#2A4A5A]">
+                  <img class="w-[48px] h-[48px]" src="/Assets2/codeicon.svg" alt="" />
+                </div>
+                <div class="flex flex-col text-start">
+                  <span class="text-white font-bold text-[18px] leading-tight">React & Next.js</span>
+                  <span class="text-[#FE9A00] text-[12px]">FRONTEND</span>
+                </div>
+              </div>
+              <span class="text-white font-bold text-[24px] leading-none">95%</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="relative w-full h-[8px] bg-[#1F272E] rounded-full overflow-hidden">
+              <div
+                class="absolute top-0 left-0 h-full w-[95%] bg-gradient-to-r from-[#FE9A00] to-[#F0B100] rounded-full">
+                <div class="absolute top-0 right-0 w-[20px] h-full bg-white/30 blur-[2px]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="mt-12 lg:mt-[80px] px-6 lg:px-0 max-w-[1280px] mx-auto pb-[80px]">
+    <div class="w-full flex flex-col items-center justify-center gap-8 lg:gap-[64px]">
+
+      <!-- Heading -->
+      <div class="flex flex-col items-center justify-center text-center">
+
+        <div
+          class="max-w-[220px] h-[36px] flex items-center gap-2 border-l-4 border-[#FE9A00] px-4 mb-4 lg:mb-6 mx-auto">
+          <img class="w-4 h-4 sm:w-5 sm:h-5" src="/Assets2/star.svg" alt="skills" />
+          <span class="text-xs sm:text-sm text-[#F0B100] whitespace-nowrap">
+            Portfolio
+          </span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+          <span class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-white uppercase">
+            Premium
+          </span>
+          <span class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-[#FE9A00] uppercase">
+            Projects
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap items-center justify-center gap-3 my-[50px]">
+      <button
+        class="px-6 h-[40px] rounded-md border border-[#FE9A00] text-white text-sm font-bold hover:bg-[#FE9A00] hover:text-black transition">
+        ALL
+      </button>
+      <button
+        class="px-6 h-[40px] rounded-md border border-[#FE9A00] text-white text-sm font-bold hover:bg-[#FE9A00] hover:text-black transition">
+        WEB
+      </button>
+      <button
+        class="px-6 h-[40px] rounded-md border border-[#FE9A00] text-white text-sm font-bold hover:bg-[#FE9A00] hover:text-black transition">
+        MOBILE
+      </button>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+      <!-- Card 1 -->
+      <div class="w-full border border-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+        <img class="w-full h-[220px] sm:h-[240px] object-cover" src="/Assets2/shopify.svg" alt="">
+        <div class="p-5 flex flex-col gap-4">
+          <p class="text-xl sm:text-2xl font-bold text-white">
+            E-Commerce Platform
+          </p>
+          <span class="text-sm text-[#99A1AF]">
+            Full-stack online store with payment integration and admin dashboard
+          </span>
+          <div class="flex flex-wrap gap-2">
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">React</button>
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">Node.js</button>
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">Stripe</button>
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">MongoDB</button>
+          </div>
+          <div class="flex items-center gap-2 cursor-pointer group">
+            <p class="text-sm sm:text-base font-bold text-[#FE9A00]">
+              VIEW DETAILS
+            </p>
+            <img class="w-4 h-4 group-hover:translate-x-1 transition" src="/Assets2/open.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-full border border-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+        <img class="w-full h-[220px] sm:h-[240px] object-cover" src="/Assets2/analytics.svg" alt="">
+        <div class="p-5 flex flex-col gap-4">
+          <p class="text-xl sm:text-2xl font-bold text-white">
+            Analytics Dashboard
+          </p>
+          <span class="text-sm text-[#99A1AF]">
+            Real-time data visualization platform for business intelligence
+          </span>
+          <div class="flex flex-wrap gap-2">
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">Vue.js</button>
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">D3.js</button>
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">PostgreSQL</button>
+          </div>
+          <div class="flex items-center gap-2 cursor-pointer group">
+            <p class="text-sm sm:text-base font-bold text-[#FE9A00]">
+              VIEW DETAILS
+            </p>
+            <img class="w-4 h-4 group-hover:translate-x-1 transition" src="/Assets2/open.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-full border border-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+        <img class="w-full h-[220px] sm:h-[240px] object-cover" src="/Assets2/fit.svg" alt="">
+        <div class="p-5 flex flex-col gap-4">
+          <p class="text-xl sm:text-2xl font-bold text-white">
+            Fitness Tracking App
+          </p>
+          <span class="text-sm text-[#99A1AF]">
+            Mobile app for workout tracking and health monitoring
+          </span>
+          <div class="flex flex-wrap gap-2">
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">React
+              Native</button>
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">Firebase</button>
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">Redux</button>
+          </div>
+          <div class="flex items-center gap-2 cursor-pointer group">
+            <p class="text-sm sm:text-base font-bold text-[#FE9A00]">
+              VIEW DETAILS
+            </p>
+            <img class="w-4 h-4 group-hover:translate-x-1 transition" src="/Assets2/open.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="w-full border border-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+        <img class="w-full h-[220px] sm:h-[240px] object-cover" src="/Assets2/work.svg" alt="">
+        <div class="p-5 flex flex-col gap-4">
+          <p class="text-xl sm:text-2xl font-bold text-white">
+            Workspace Manager
+          </p>
+          <span class="text-sm text-[#99A1AF]">
+            Collaborative project management tool for remote teams
+          </span>
+          <div class="flex flex-wrap gap-2">
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">Next.js</button>
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">TypeScript</button>
+            <button
+              class="py-1 px-3 rounded-md border border-[#FE9A00] bg-[#1f170d] text-xs text-[#FE9A00] font-bold hover:bg-[#FE9A00] hover:text-white transition">Prisma</button>
+          </div>
+          <div class="flex items-center gap-2 cursor-pointer group">
+            <p class="text-sm sm:text-base font-bold text-[#FE9A00]">
+              VIEW DETAILS
+            </p>
+            <img class="w-4 h-4 group-hover:translate-x-1 transition" src="/Assets2/open.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="w-full py-[80px] px-[84px]" id="#education">
+    <div class="w-full flex flex-col items-center justify-center gap-8 lg:gap-[64px]">
+
+      <!-- Heading -->
+      <div class="flex flex-col items-center justify-center text-center">
+
+        <div
+          class="max-w-[220px] h-[36px] flex items-center gap-2 border-l-4 border-[#FE9A00] px-4 mb-4 lg:mb-6 mx-auto">
+          <img class="w-4 h-4 sm:w-5 sm:h-5" src="/Assets2/edu.svg" alt="skills" />
+          <span class="text-xs sm:text-sm text-[#F0B100] whitespace-nowrap">
+            EDUCATION
+          </span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+          <span class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-white uppercase">
+            ACADEMIC
+          </span>
+          <span
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-[#FE9A00] uppercase lg:-top-4 relative">
+            EXCELLENCE
+          </span>
+        </div>
+      </div>
+
+      <div>
+        <section class="relative bg-black text-white py-20 overflow-hidden md:w-[1200px]">
+
+          <!-- Center Vertical Line -->
+          <div class="absolute left-1/2 top-0 h-full w-[2px] bg-[#FE9A00] -translate-x-1/2"></div>
+
+          <div class="max-w-[896px] mx-auto px-6 space-y-24">
+
+            <!-- Item 1 (Left) -->
+            <div class="relative flex flex-col md:flex-row items-center">
+
+              <!-- Card -->
+              <div class="md:w-[416px] md:pr-16">
+                <div class="bg-[#0b1220] border border-[#FE9A00] rounded-xl p-4 shadow-lg text-right">
+
+                  <p class="text-sm text-[#FE9A00] mb-2">2022 - 2024</p>
+
+                  <p class="text-[20px] font-bold mb-2">
+                    Master of Science in Computer Science
+                  </p>
+
+                  <p class="text-gray-400 text-sm mb-3">
+                    Stanford University, California, USA
+                  </p>
+
+                  <span class="inline-block border border-[#FE9A00] text-[#FE9A00] text-xs px-3 py-1 rounded-md mb-3">
+                    4.0 GPA
+                  </span>
+
+                  <p class="text-gray-400 text-sm">
+                    Specialized in Machine Learning and Distributed Systems
+                  </p>
+
+                </div>
+              </div>
+
+              <!-- Dot -->
+              <div
+                class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-[#FE9A00] rounded-full border-4 border-black shadow-[0_0_15px_#FE9A00]">
+              </div>
+
+              <!-- Empty Right Space -->
+              <div class="md:w-1/2"></div>
+
+            </div>
+
+
+            <!-- Item 2 (Right) -->
+            <div class="relative flex flex-col md:flex-row items-center">
+
+              <!-- Empty Left Space -->
+              <div class="md:w-1/2"></div>
+
+              <!-- Dot -->
+              <div
+                class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-[#FE9A00] rounded-full border-4 border-black shadow-[0_0_15px_#FE9A00]">
+              </div>
+
+              <!-- Card -->
+              <div class="md:w-1/2 md:pl-16">
+                <div class="bg-[#0b1220] border border-[#FE9A00] rounded-xl p-6 shadow-lg">
+
+                  <p class="text-sm text-[#FE9A00] mb-2">2018 - 2022</p>
+
+                  <h3 class="text-2xl font-bold mb-2">
+                    Bachelor of Science in Software Engineering
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mb-3">
+                    MIT, Massachusetts, USA
+                  </p>
+
+                  <span class="inline-block border border-[#FE9A00] text-[#FE9A00] text-xs px-3 py-1 rounded-md mb-3">
+                    3.9 GPA
+                  </span>
+
+                  <p class="text-gray-400 text-sm">
+                    Focus on Web Technologies and Algorithm Design
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+
+
+            <!-- Item 3 (Left) -->
+            <div class="relative flex flex-col md:flex-row items-center">
+
+              <div class="md:w-1/2 md:pr-16">
+                <div class="bg-[#0b1220] border border-[#FE9A00] rounded-xl p-6 shadow-lg">
+
+                  <p class="text-sm text-[#FE9A00] mb-2">2023</p>
+
+                  <h3 class="text-2xl font-bold mb-2">
+                    AWS Certified Solutions Architect
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mb-3">
+                    Amazon Web Services (Online)
+                  </p>
+
+                  <span class="inline-block border border-[#FE9A00] text-[#FE9A00] text-xs px-3 py-1 rounded-md mb-3">
+                    Professional
+                  </span>
+
+                  <p class="text-gray-400 text-sm">
+                    Advanced cloud architecture and deployment strategies
+                  </p>
+
+                </div>
+              </div>
+
+              <div
+                class="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-[#FE9A00] rounded-full border-4 border-black shadow-[0_0_15px_#FE9A00]">
+              </div>
+
+              <div class="md:w-1/2"></div>
+
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </section>
+    
+  <section class="bg-black py-[80px] px-4 sm:px-8 lg:px-[84px]">
+
+  <!-- Heading -->
+  <div class="flex flex-col items-center justify-center text-center">
+
+    <div
+      class="max-w-[220px] h-[36px] flex items-center gap-2 border-l-4 border-[#FE9A00] px-4 mb-4 lg:mb-6 mx-auto">
+      <img class="w-4 h-4 sm:w-5 sm:h-5" src="/Assets2/msg.svg" alt="" />
+      <span class="text-xs sm:text-sm text-[#F0B100] whitespace-nowrap">
+        CONTACT
+      </span>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+      <span class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-white uppercase">
+        ACADEMIC
+      </span>
+      <span
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-bold text-[#FE9A00] uppercase relative lg:-top-4">
+        EXCELLENCE
+      </span>
+    </div>
+  </div>
+
+
+  <!-- Content -->
+  <div class="max-w-7xl mx-auto mt-16">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+      <!-- LEFT SIDE -->
+      <div
+        class="p-6 sm:p-8 lg:p-[34px] flex flex-col gap-6
+               border border-[#FE9A00] rounded-xl w-full">
+
+        <!-- Email -->
+        <div
+          class="flex items-center gap-4 border-l-2 border-[#FE9A00]
+                 rounded-tl-[10px] rounded-bl-[10px]
+                 p-5 w-full">
+          <img class="w-10 h-10 lg:w-[48px] lg:h-[48px]"
+               src="/Assets2/msg.svg" alt="">
+          <div class="flex flex-col">
+            <span class="text-sm text-[#99A1AF]">Email</span>
+            <span class="text-base text-white font-bold break-all">
+              arslanchoudary23@gmail
+            </span>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div
+          class="flex items-center gap-4 border-l-2 border-[#FE9A00]
+                 rounded-tl-[10px] rounded-bl-[10px]
+                 p-5 w-full">
+          <img class="w-10 h-10 lg:w-[48px] lg:h-[48px]"
+               src="/Assets2/location.svg" alt="">
+          <div class="flex flex-col">
+            <span class="text-sm text-[#99A1AF]">Location</span>
+            <span class="text-base text-white font-bold">
+              Bahawalpur Pakistan
+            </span>
+          </div>
+        </div>
+
+        <!-- Website -->
+        <div
+          class="flex items-center gap-4 border-l-2 border-[#FE9A00]
+                 rounded-tl-[10px] rounded-bl-[10px]
+                 p-5 w-full">
+          <img class="w-10 h-10 lg:w-[48px] lg:h-[48px]"
+               src="/Assets2/world.svg" alt="">
+          <div class="flex flex-col">
+            <span class="text-sm text-[#99A1AF]">Website</span>
+            <span class="text-base text-white font-bold">
+              ARSLAN.dev
+            </span>
+          </div>
+        </div>
+
+        <!-- Download -->
+        <button
+          class="w-full h-[56px] mt-4
+                 bg-gradient-to-r from-[#F0B100] to-[#FE9A00]
+                 flex items-center justify-center gap-2
+                 text-[16px] text-black font-bold
+                 hover:scale-[1.02] transition duration-300
+                 shadow-[0_0_20px_rgba(254,154,0,0.5)]">
+          <img src="/Assets2/download.svg" alt="">
+          DOWNLOAD RESUME
+        </button>
+
+      </div>
+
+
+      <!-- RIGHT SIDE -->
+      <div class="relative w-full">
+
+        <!-- Glow -->
+        <div class="absolute inset-0 bg-[#FE9A00] blur-3xl opacity-20 rounded-2xl"></div>
+
+        <!-- Form Card -->
+        <div
+          class="relative bg-gradient-to-br from-[#0b1220] to-[#0a0f1a]
+                 border border-[#FE9A00] rounded-2xl
+                 p-6 sm:p-8">
+
+          <form class="space-y-8">
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+              <div class="flex flex-col space-y-2">
+                <label class="text-xs tracking-widest text-gray-400 uppercase">
+                  First Name
+                </label>
+                <input type="text" placeholder="John"
+                  class="bg-black border border-[#FE9A00] rounded-md px-4 h-12 text-white
+                         focus:outline-none focus:ring-2 focus:ring-[#FE9A00]
+                         placeholder-gray-500 transition" />
+              </div>
+
+              <div class="flex flex-col space-y-2">
+                <label class="text-xs tracking-widest text-gray-400 uppercase">
+                  Last Name
+                </label>
+                <input type="text" placeholder="Doe"
+                  class="bg-black border border-[#FE9A00] rounded-md px-4 h-12 text-white
+                         focus:outline-none focus:ring-2 focus:ring-[#FE9A00]
+                         placeholder-gray-500 transition" />
+              </div>
+
+            </div>
+
+            <div class="flex flex-col space-y-2">
+              <label class="text-xs tracking-widest text-gray-400 uppercase">
+                Email
+              </label>
+              <input type="email" placeholder="john@example.com"
+                class="bg-black border border-[#FE9A00] rounded-md px-4 h-12 text-white
+                       focus:outline-none focus:ring-2 focus:ring-[#FE9A00]
+                       placeholder-gray-500 transition" />
+            </div>
+
+            <div class="flex flex-col space-y-2">
+              <label class="text-xs tracking-widest text-gray-400 uppercase">
+                Message
+              </label>
+              <textarea rows="5" placeholder="Your message..."
+                class="bg-black border border-[#FE9A00] rounded-md px-4 py-3 text-white
+                       focus:outline-none focus:ring-2 focus:ring-[#FE9A00]
+                       placeholder-gray-500 resize-none transition"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full h-14 rounded-md font-semibold text-black
+                     bg-gradient-to-r from-[#FE9A00] to-[#f8b400]
+                     hover:scale-[1.02] transition duration-300
+                     shadow-[0_0_20px_rgba(254,154,0,0.6)]
+                     flex items-center justify-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5"
+                fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M22 2L11 13" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M22 2L15 22L11 13L2 9L22 2Z" />
+              </svg>
+              SEND MESSAGE
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<footer class="bg-black text-white relative">
+
+  <!-- Top Border Glow Line -->
+  <div class="w-full h-[1px] bg-gradient-to-r from-transparent via-[#FE9A00] to-transparent"></div>
+
+  <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 py-14">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- LEFT SECTION -->
+      <div class="space-y-4">
+
+        <div class="flex items-center gap-3">
+          <!-- Hex Icon -->
+          <div class="w-10 h-10 border-2 border-[#FE9A00] rotate-45"></div>
+
+          <div>
+            <h2 class="text-lg font-semibold tracking-wide">JOHN DOE</h2>
+            <p class="text-xs text-[#FE9A00] tracking-widest uppercase">
+              Elite Developer
+            </p>
+          </div>
+        </div>
+
+        <p class="text-sm text-gray-400 max-w-xs">
+          Delivering excellence in every line of code.
+        </p>
+      </div>
+
+
+      <!-- QUICK LINKS -->
+      <div class="space-y-4 md:mx-auto">
+
+        <h3 class="text-sm text-[#FE9A00] tracking-widest uppercase">
+          Quick Links
+        </h3>
+
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li class="hover:text-[#FE9A00] transition cursor-pointer">About</li>
+          <li class="hover:text-[#FE9A00] transition cursor-pointer">Skills</li>
+          <li class="hover:text-[#FE9A00] transition cursor-pointer">Projects</li>
+          <li class="hover:text-[#FE9A00] transition cursor-pointer">Contact</li>
+        </ul>
+
+      </div>
+
+
+      <!-- CONNECT -->
+      <div class="space-y-4 md:text-right">
+
+        <h3 class="text-sm text-[#FE9A00] text-center tracking-widest uppercase">
+          Connect
+        </h3>
+
+        <div class="flex md:justify-center gap-4">
+
+          <!-- Social Icon Box -->
+          <div
+            class="w-10 h-10 border border-[#FE9A00] flex items-center justify-center rounded-md
+                   hover:bg-[#FE9A00] hover:text-black transition duration-300 cursor-pointer">
+            <img src="/Assets2/github.svg" alt="">
+          </div>
+
+          <div
+            class="w-10 h-10 border border-[#FE9A00] flex items-center justify-center rounded-md
+                   hover:bg-[#FE9A00] hover:text-black transition duration-300 cursor-pointer">
+            <img src="/Assets2/Linkedin.svg" alt="">
+          </div>
+
+          <div
+            class="w-10 h-10 border border-[#FE9A00] flex items-center justify-center rounded-md
+                   hover:bg-[#FE9A00] hover:text-black transition duration-300 cursor-pointer">
+           <img src="/Assets2/tweter.svg" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="mt-12 border-t border-[#FE9A00]/30 pt-6 text-center text-sm text-gray-500">
+      © 2026 John Doe. Crafted with precision using React & Tailwind CSS
+    </div>
+
+  </div>
+</footer>
+
+
+
+</body>
+
+</html>

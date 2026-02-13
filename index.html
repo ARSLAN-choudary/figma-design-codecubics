@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>John Doe Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-[#364153]">
+
+  <header class="bg-white shadow-sm fixed w-full z-50">
+    <nav class="max-w-[1216px] mx-auto flex justify-between items-center py-4 px-4">
+      <h2 class="text-xl font-bold">JD</h2>
+
+      <ul class="hidden md:flex items-center gap-6 text-[16px] font-medium">
+        <li><a href="#home" class="hover:text-blue-600 transition">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
+        <li><a href="#education" class="hover:text-blue-600 transition">Education</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+        <li>
+          <button class="bg-[#432DD7] text-white px-4 py-2 rounded-[10px] hover:bg-blue-700 transition">
+            Hire Me
+          </button>
+        </li>
+      </ul>
+
+      <div class="md:hidden flex items-center">
+        <label for="menu-toggle" class="cursor-pointer">
+          <svg class="w-6 h-6 text-[#364153]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+      </div>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    <div
+      class="peer-checked:flex hidden flex-col items-center gap-4 bg-white shadow-md absolute w-full top-[64px] left-0 py-4 md:hidden">
+      <a href="#home" class="hover:text-blue-600 transition">About</a>
+      <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+      <a href="#education" class="hover:text-blue-600 transition">Education</a>
+      <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+    </div>
+  </header>
+
+  <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-0 gap-10 pt-24">
+    <div class="flex justify-center md:w-[50%]">
+      <div class="w-[320px] h-[320px] rounded-full overflow-hidden border-8 border-white">
+        <img src="/Assets/IMG_20230514_002415.jpg" alt="Profile" class="w-full h-full object-cover">
+      </div>
+    </div>
+    <div class="flex flex-col gap-6 md:w-[50%] max-w-[584px]">
+      <h1 class="font-medium text-[60px]">John Doe</h1>
+      <p class="text-[24px] text-[#009689]">Full Stack Developer</p>
+      <div class="flex flex-col gap-4 text-[18px] leading-7">
+        <span>I'm a passionate full stack developer with 5+ years of experience building scalable web applications.</span>
+        <span>My approach combines clean code practices with user-centered design, ensuring every project is robust and intuitive.</span>
+        <span>When I'm not coding, you'll find me contributing to open-source projects, writing technical blogs, or exploring latest trends.</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 mt-4">
+        <button
+          class="flex items-center justify-center gap-2 bg-[#432DD7] text-white px-6 py-3 rounded-[10px] hover:bg-blue-700 transition w-full sm:w-auto">
+          <img src="/Assets/Icon.svg" class="w-5 h-5" alt=""> Download CV
+        </button>
+        <button
+          class="border-2 border-[#432DD7] rounded-[10px] text-[#432DD7] px-6 py-3 hover:bg-blue-700 hover:text-white transition w-full sm:w-auto">
+          Contact Me
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-[#F9FAFB] py-20">
+    <div class="max-w-[1280px] mx-auto flex flex-col gap-12 px-4">
+      <div class="text-center flex flex-col gap-2">
+        <h2 class="text-[48px] font-medium">Skills & Expertise</h2>
+        <span class="text-[18px] text-[#4A5565]">A comprehensive set of technical skills I've developed throughout my career</span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-[16px] shadow-md flex flex-col items-center justify-center p-6 gap-4">
+          <img class="w-16 h-16" src="/Assets/Container.svg" alt="">
+          <span class="text-[18px] font-medium">Frontend Development</span>
+        </div>
+        <div class="bg-white rounded-[16px] shadow-md flex flex-col items-center justify-center p-6 gap-4">
+          <img class="w-16 h-16" src="/Assets/backend.svg" alt="">
+          <span class="text-[18px] font-medium">Backend Development</span>
+        </div>
+        <div class="bg-white rounded-[16px] shadow-md flex flex-col items-center justify-center p-6 gap-4">
+          <img class="w-16 h-16" src="/Assets/database.svg" alt="">
+          <span class="text-[18px] font-medium">Database Design</span>
+        </div>
+        <div class="bg-white rounded-[16px] shadow-md flex flex-col items-center justify-center p-6 gap-4">
+          <img class="w-16 h-16" src="/Assets/uiux.svg" alt="">
+          <span class="text-[18px] font-medium">UI/UX Design</span>
+        </div>
+        <div class="bg-white rounded-[16px] shadow-md flex flex-col items-center justify-center p-6 gap-4">
+          <img class="w-16 h-16" src="/Assets/mobile.svg" alt="">
+          <span class="text-[18px] font-medium">Mobile Development</span>
+        </div>
+        <div class="bg-white rounded-[16px] shadow-md flex flex-col items-center justify-center p-6 gap-4">
+          <img class="w-16 h-16" src="/Assets/cloud.svg" alt="">
+          <span class="text-[18px] font-medium">Cloud Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="bg-white py-20 flex flex-col items-center gap-6">
+    <div class="text-center flex flex-col gap-2">
+      <h2 class="text-[48px] font-medium">Education</h2>
+      <span class="text-[18px] text-[#4A5565]">My academic background and professional certifications</span>
+    </div>
+    <div class="max-w-[1000px] w-full overflow-x-auto mt-10">
+      <table class="w-full border border-gray-200 rounded-[16px] overflow-hidden shadow-md">
+        <thead class="bg-[#432DD7] text-white h-14 text-left">
+          <tr>
+            <th class="px-6 py-3">Degree</th>
+            <th class="px-6 py-3">Institute</th>
+            <th class="px-6 py-3">Year</th>
+            <th class="px-6 py-3">Grade</th>
+          </tr>
+        </thead>
+        <tbody class="text-[#364153]">
+          <tr class="border-t hover:bg-gray-50 transition">
+            <td class="px-6 py-4">BS Computer Science</td>
+            <td class="px-6 py-4">University of XYZ</td>
+            <td class="px-6 py-4 text-[#009689]">2019 - 2023</td>
+            <td class="px-6 py-4"><span
+                class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[14px] inline-block">3.4 CGPA</span></td>
+          </tr>
+          <tr class="border-t hover:bg-gray-50 transition">
+            <td class="px-6 py-4">Intermediate (ICS)</td>
+            <td class="px-6 py-4">ABC College</td>
+            <td class="px-6 py-4 text-[#009689]">2017 - 2019</td>
+            <td class="px-6 py-4"><span
+                class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[14px] inline-block">85%</span></td>
+          </tr>
+          <tr class="border-t hover:bg-gray-50 transition">
+            <td class="px-6 py-4">Matric</td>
+            <td class="px-6 py-4">XYZ School</td>
+            <td class="px-6 py-4 text-[#009689]">2015 - 2017</td>
+            <td class="px-6 py-4"><span
+                class="bg-[#E0E7FF] px-3 py-1 rounded-full text-[14px] inline-block">90%</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact" class="w-full bg-[#F9FAFB] py-20 flex flex-col items-center gap-6">
+    <div class="text-center flex flex-col gap-2">
+      <h2 class="text-[48px] font-medium">Get In Touch</h2>
+      <span class="text-[18px] text-[#4A5565]">Have a project in mind? Let's work together to bring your ideas to life</span>
+    </div>
+
+    <form class="max-w-[672px] w-full bg-white rounded-[24px] p-8 flex flex-col gap-6 shadow-md">
+      <div class="flex flex-col gap-2">
+        <label for="yourName" class="font-medium text-[14px]">Your Name</label>
+        <input type="text" id="yourName" placeholder="John Doe"
+          class="w-full h-[50px] border border-[#D1D5DC] rounded-[14px] px-4 placeholder:text-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#432DD7] focus:border-[#432DD7] transition">
+      </div>
+      <div class="flex flex-col gap-2">
+        <label for="yourEmail" class="font-medium text-[14px]">Your Email</label>
+        <input type="email" id="yourEmail" placeholder="john@example.com"
+          class="w-full h-[50px] border border-[#D1D5DC] rounded-[14px] px-4 placeholder:text-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#432DD7] focus:border-[#432DD7] transition">
+      </div>
+      <div class="flex flex-col gap-2">
+        <label for="message" class="font-medium text-[14px]">Message</label>
+        <textarea id="message" placeholder="Tell me about your project..." rows="5"
+          class="w-full border border-[#D1D5DC] rounded-[14px] px-4 py-3 placeholder:text-[#9CA3AF] focus:outline-none focus:ring-2 focus:ring-[#432DD7] focus:border-[#432DD7] transition resize-none"></textarea>
+      </div>
+      <button
+        class="w-full h-[56px] bg-[#432DD7] text-white rounded-[14px] flex items-center justify-center gap-2 hover:bg-blue-700 transition">
+        <img src="/Assets/message.svg" alt="" class="w-5 h-5"> Send Message
+      </button>
+    </form>
+  </section>
+
+  <footer class="bg-[#312C85] py-8">
+    <div class="max-w-[1216px] mx-auto flex flex-col items-center justify-center gap-4 px-4">
+      <div class="flex items-center justify-center gap-6">
+        <a href="#"><img src="/Assets/github.svg" alt="GitHub" class="w-12 h-12" /></a>
+        <a href="#"><img src="/Assets/linkedin.svg" alt="LinkedIn" class="w-12 h-12" /></a>
+        <a href="#"><img src="/Assets/hmm.svg" alt="Other" class="w-12 h-12" /></a>
+      </div>
+      <div class="flex flex-col items-center gap-1 text-center text-[#C6D2FF]">
+        <p class="text-[16px]">© 2026 John Doe. All rights reserved.</p>
+        <span class="text-[16px]">Built with React & Tailwind CSS</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
